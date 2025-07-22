@@ -14,16 +14,38 @@
       color: #f1f1f1;
     }
 
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #00adb5;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
     .container {
       max-width: 1000px;
       margin: 50px auto;
       padding: 30px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #00adb5;
-      margin-bottom: 30px;
     }
 
     h2 {
@@ -87,19 +109,13 @@
       box-shadow: 0 0 12px rgba(0,0,0,0.6);
     }
 
-    a.btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #00adb5;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
+    footer {
       text-align: center;
-    }
-
-    a.btn:hover {
-      background-color: #009a9a;
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+      background-color: #1e1e1e;
     }
 
     @media (max-width: 768px) {
@@ -110,45 +126,48 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1><i class="fas fa-tools"></i> Skills & Certifications</h1>
 
-    <h2><i class="fas fa-code"></i> Programming Languages</h2>
+  <!-- Header & Navigation -->
+  <header>
+    <h1><i class="fas fa-tools"></i> Skills & Certifications</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Content Container -->
+  <div class="container">
+
+    <!-- Programming Skills -->
+    <h2><i class="fas fa-code"></i> Programming Languages & Tools</h2>
     <div class="skills-list">
-      <div class="skill-item">
-        <div class="skill-label"><i class="fab fa-java"></i>Java - 90%</div>
-        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-label"><i class="fab fa-python"></i>Python - 85%</div>
-        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-label"><i class="fas fa-cogs"></i>C++ - 75%</div>
-        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-label"><i class="fas fa-laptop-code"></i>C# (ASP.NET) - 80%</div>
-        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-label"><i class="fab fa-html5"></i>HTML - 95%</div>
-        <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-label"><i class="fab fa-css3-alt"></i>CSS - 90%</div>
-        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-label"><i class="fab fa-js"></i>JavaScript - 75%</div>
-        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-label"><i class="fas fa-database"></i>SQL - 85%</div>
-        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-      </div>
+      <div class="skill-item"><div class="skill-label"><i class="fab fa-java"></i>Java - 90%</div><div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fab fa-python"></i>Python - 85%</div><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fas fa-cogs"></i>C++ - 75%</div><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fas fa-laptop-code"></i>C# (ASP.NET) - 80%</div><div class="progress-bar"><div class="progress" style="width: 80%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fab fa-html5"></i>HTML - 95%</div><div class="progress-bar"><div class="progress" style="width: 95%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fab fa-css3-alt"></i>CSS - 90%</div><div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fab fa-js"></i>JavaScript - 75%</div><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fas fa-database"></i>SQL - 85%</div><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
     </div>
 
+    <!-- Other Skills -->
+    <h2><i class="fas fa-network-wired"></i> Other Skills</h2>
+    <div class="skills-list">
+      <div class="skill-item"><div class="skill-label"><i class="fas fa-network-wired"></i>Networking (Cisco) - 80%</div><div class="progress-bar"><div class="progress" style="width: 80%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fab fa-linux"></i>Linux OS - 70%</div><div class="progress-bar"><div class="progress" style="width: 70%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fab fa-github"></i>Git & GitHub - 85%</div><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fas fa-database"></i>Oracle DB - 75%</div><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></div>
+      <div class="skill-item"><div class="skill-label"><i class="fas fa-brain"></i>Machine Learning (Basic) - 60%</div><div class="progress-bar"><div class="progress" style="width: 60%;"></div></div></div>
+    </div>
+
+    <!-- Certifications -->
     <h2><i class="fas fa-certificate"></i> Certifications</h2>
     <div class="certifications">
       <img src="cybersecurity.jpg.png" alt="Introduction to Cybersecurity Certificate">
@@ -156,11 +175,15 @@
       <img src="cybercrime.jpg.png" alt="Introduction to Cybercrime Certificate">
     </div>
 
-    <a href="index.html" class="btn"><i class="fas fa-home"></i> Back to Home</a>
   </div>
 
+  <!-- Footer -->
+  <footer>
+    © 2025 Phuti Matooane. All rights reserved.
+  </footer>
+
+  <!-- Skill Bar Animation -->
   <script>
-    // Animate skill bars on load
     window.addEventListener('load', () => {
       const bars = document.querySelectorAll('.progress');
       bars.forEach(bar => {
@@ -172,5 +195,6 @@
       });
     });
   </script>
+
 </body>
 </html>
