@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Phuti Matooane</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1f1f1f;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #00adb5;
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #00adb5;
+    }
+
+    .about-text h2 {
+      margin-top: 5px;
+      font-weight: 400;
+      color: #aaaaaa;
+      font-size: 1.2rem;
+    }
+
+    .about-text p {
+      margin-top: 20px;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #00adb5;
+      color: #121212;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #009a9a;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+    <img src="yourphoto.jpg" alt="Profile Picture" class="profile-pic" />
+
+    <div class="about-text">
+      <h1>Phuti DanielJunior Matooane</h1>
+      <h2>Final-Year BSc IT Student | Software Developer</h2>
+      <p>
+        I am a final-year BSc in Information Technology student at North-West University, majoring in Computer Science and Information Systems.
+        I have a solid foundation in software development with experience in Java, Python, C++, C# (ASP.NET), and JavaScript. I also have
+        knowledge of SQL databases, HTML, and CSS, with a growing interest in AI and data analytics. Additionally, I’ve worked with tools like
+        Oracle, Linux, GitHub, Visual Studio, and have practical networking exposure using Cisco routing and switching.
+      </p>
+
+      <a href="Phuti_Matooane_CV.pdf" download class="btn">📄 Download CV</a><br />
+      <a href="Home.html" class="btn" style="margin-top:10px;">🏠 Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
