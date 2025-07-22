@@ -58,10 +58,12 @@
       gap: 10px;
     }
 
+    /* Skills Lists */
     .skills-list {
       margin-top: 20px;
     }
 
+    /* Skill item with progress */
     .skill-item {
       margin-bottom: 25px;
     }
@@ -95,6 +97,29 @@
       transition: width 1.5s ease-in-out;
     }
 
+    /* Skill item no progress bar */
+    .skill-list-no-bar {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .skill-list-no-bar li {
+      background-color: #1f1f1f;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: #00adb5;
+    }
+
+    /* Certifications grid */
     .certifications {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -122,6 +147,9 @@
       .skill-label {
         font-size: 0.95rem;
       }
+      .skill-list-no-bar li {
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
@@ -141,31 +169,72 @@
     </nav>
   </header>
 
-  <!-- Content Container -->
   <div class="container">
 
-    <!-- Programming Skills -->
-    <h2><i class="fas fa-code"></i> Programming Languages & Tools</h2>
+    <!-- Programming Languages & Frameworks with progress bars -->
+    <h2><i class="fas fa-code"></i> Programming Languages & Frameworks</h2>
     <div class="skills-list">
-      <div class="skill-item"><div class="skill-label"><i class="fab fa-java"></i>Java - 90%</div><div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fab fa-python"></i>Python - 85%</div><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fas fa-cogs"></i>C++ - 75%</div><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fas fa-laptop-code"></i>C# (ASP.NET) - 80%</div><div class="progress-bar"><div class="progress" style="width: 80%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fab fa-html5"></i>HTML - 95%</div><div class="progress-bar"><div class="progress" style="width: 95%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fab fa-css3-alt"></i>CSS - 90%</div><div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fab fa-js"></i>JavaScript - 75%</div><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fas fa-database"></i>SQL - 85%</div><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
+      <div class="skill-item">
+        <div class="skill-label"><i class="fab fa-java"></i>Java - 90%</div>
+        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-label"><i class="fab fa-python"></i>Python - 85%</div>
+        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-label"><i class="fas fa-cogs"></i>C++ - 75%</div>
+        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-label"><i class="fas fa-laptop-code"></i>C# (ASP.NET) - 80%</div>
+        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-label"><i class="fab fa-html5"></i>HTML - 95%</div>
+        <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-label"><i class="fab fa-css3-alt"></i>CSS - 90%</div>
+        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-label"><i class="fab fa-js"></i>JavaScript - 75%</div>
+        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-label"><i class="fas fa-database"></i>SQL - 85%</div>
+        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-label"><i class="fas fa-database"></i>Oracle DB - 75%</div>
+        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+      </div>
     </div>
 
-    <!-- Other Skills -->
-    <h2><i class="fas fa-network-wired"></i> Other Skills</h2>
-    <div class="skills-list">
-      <div class="skill-item"><div class="skill-label"><i class="fas fa-network-wired"></i>Networking (Cisco) - 80%</div><div class="progress-bar"><div class="progress" style="width: 80%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fab fa-linux"></i>Linux OS - 70%</div><div class="progress-bar"><div class="progress" style="width: 70%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fab fa-github"></i>Git & GitHub - 85%</div><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fas fa-database"></i>Oracle DB - 75%</div><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></div>
-      <div class="skill-item"><div class="skill-label"><i class="fas fa-brain"></i>Machine Learning (Basic) - 60%</div><div class="progress-bar"><div class="progress" style="width: 60%;"></div></div></div>
-    </div>
+    <!-- Technical Skills no progress bars -->
+    <h2><i class="fas fa-toolbox"></i> Technical Skills</h2>
+    <ul class="skill-list-no-bar">
+      <li><i class="fab fa-linux"></i> Linux OS</li>
+      <li><i class="fab fa-github"></i> Git & GitHub</li>
+      <li><i class="fas fa-network-wired"></i> Networking (Cisco)</li>
+      <li><i class="fas fa-server"></i> Server Management</li>
+      <li><i class="fas fa-cloud"></i> Cloud Computing Basics</li>
+      <li><i class="fas fa-database"></i> Database Management</li>
+      <li><i class="fas fa-code-branch"></i> Version Control</li>
+      <li><i class="fas fa-terminal"></i> Command Line / Bash Scripting</li>
+    </ul>
+
+    <!-- Soft Skills no progress bars -->
+    <h2><i class="fas fa-user-friends"></i> Soft Skills</h2>
+    <ul class="skill-list-no-bar">
+      <li><i class="fas fa-comments"></i> Communication</li>
+      <li><i class="fas fa-users"></i> Teamwork</li>
+      <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+      <li><i class="fas fa-tasks"></i> Time Management</li>
+      <li><i class="fas fa-chalkboard-teacher"></i> Adaptability</li>
+      <li><i class="fas fa-brain"></i> Critical Thinking</li>
+    </ul>
 
     <!-- Certifications -->
     <h2><i class="fas fa-certificate"></i> Certifications</h2>
