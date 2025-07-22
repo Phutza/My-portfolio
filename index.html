@@ -2,16 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home - Phuti DanielJunior Matooane</title>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phuti DanielJunior Matooane | Portfolio</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
   <style>
-    body {
+    :root {
+      --bg-color: #121212;
+      --container-bg: #1e1e1e;
+      --primary-color: #00adb5;
+      --text-color: #eeeeee;
+      --text-muted: #cccccc;
+      --hover-color: #009a9a;
+    }
+
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #121212 0%, #1f1f1f 100%);
-      color: #f1f1f1;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -19,57 +38,76 @@
       text-align: center;
       padding: 20px;
     }
+
     .container {
-      max-width: 700px;
-      background-color: #1f1f1f;
-      padding: 40px 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 25px rgba(0, 173, 181, 0.6);
+      max-width: 800px;
+      background-color: var(--container-bg);
+      padding: 50px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 173, 181, 0.4);
     }
+
     h1 {
-      color: #00adb5;
-      margin-bottom: 15px;
-      font-size: 2.8rem;
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
     }
+
     p {
       font-size: 1.2rem;
+      color: var(--text-muted);
       margin-bottom: 40px;
-      color: #ccc;
+      line-height: 1.6;
     }
+
     .nav-links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 25px;
+      gap: 20px;
     }
+
     .nav-links a {
       text-decoration: none;
-      background-color: #00adb5;
-      color: #121212;
-      padding: 15px 25px;
-      border-radius: 8px;
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-size: 1rem;
       font-weight: bold;
-      font-size: 1.1rem;
-      transition: background-color 0.3s ease;
-      min-width: 180px;
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 10px;
+      transition: all 0.3s ease;
+      min-width: 180px;
     }
+
     .nav-links a:hover {
-      background-color: #009a9a;
+      background-color: var(--hover-color);
+      transform: translateY(-2px);
     }
+
     .nav-links i {
       font-size: 1.2rem;
     }
-    @media (max-width: 480px) {
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
       .nav-links {
         flex-direction: column;
-        gap: 15px;
+        gap: 16px;
       }
+
       .nav-links a {
-        min-width: auto;
+        width: 100%;
+        justify-content: center;
       }
     }
   </style>
@@ -77,13 +115,17 @@
 <body>
   <div class="container">
     <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Phuti DanielJunior Matooane, a final-year BSc in Information Technology majoring in Computer Science student at North-West University passionate about software development, networking, and data analytics. Explore my work and skills below.</p>
+    <p>
+      Hi, I'm <strong>Phuti DanielJunior Matooane</strong>, a final-year BSc IT student at North-West University, specializing in Computer Science.
+      I’m passionate about <strong>software development</strong>, <strong>networking</strong>, and <strong>data analytics</strong>. Explore my portfolio below.
+    </p>
+
     <div class="nav-links">
-      <a href="about.html"><i class="fas fa-user"></i>About Me</a>
-      <a href="projects.html"><i class="fas fa-laptop-code"></i>Projects</a>
-      <a href="skills.html"><i class="fas fa-certificate"></i>Skills & Certifications</a>
-      <a href="education.html"><i class="fas fa-graduation-cap"></i>Education</a>
-      <a href="contact.html"><i class="fas fa-envelope"></i>Contact Me</a>
+      <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+      <a href="projects.html"><i class="fas fa-laptop-code"></i> Projects</a>
+      <a href="skills.html"><i class="fas fa-certificate"></i> Skills & Certifications</a>
+      <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact Me</a>
     </div>
   </div>
 </body>
