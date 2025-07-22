@@ -12,6 +12,34 @@
       color: #f1f1f1;
     }
 
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #00adb5;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
     .container {
       max-width: 1000px;
       margin: 50px auto;
@@ -94,6 +122,15 @@
       color: #ddd;
     }
 
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+      background-color: #1e1e1e;
+    }
+
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -107,8 +144,24 @@
   </style>
 </head>
 <body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>About Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
   <div class="container">
-    <img src="profile.jpg" alt="Phuti Matooane" class="profile-pic" />
+    <img src="yourphoto.jpg" alt="Phuti Matooane" class="profile-pic" />
 
     <div class="about-text">
       <h1>Phuti DanielJunior Matooane</h1>
@@ -120,10 +173,8 @@
         I’ve also worked with Oracle, GitHub, Linux, Visual Studio, and have practical networking experience using Cisco routing and switching.
       </p>
 
-      <a href="Phuti_Matooane_CV.pdf" download class="btn">📄 Download CV</a><br />
-      <a href="index.html" class="btn" style="margin-top:10px;">🏠 Back to Home</a>
+      <a href="Phuti_Matooane_CV.pdf" download class="btn">📄 Download CV</a>
 
-      <!-- Optional Card Section (like Education Style) -->
       <div class="card">
         <h3>Passion</h3>
         <p>I am passionate about building smart, efficient, and impactful software solutions that solve real-world problems.</p>
@@ -135,5 +186,11 @@
       </div>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Phuti Matooane. All rights reserved.
+  </footer>
+
 </body>
 </html>
