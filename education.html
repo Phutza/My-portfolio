@@ -12,6 +12,33 @@
       color: #f1f1f1;
     }
 
+    header {
+      background-color: #1a1a1a;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    }
+
+    header h2 {
+      color: #00adb5;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
     .container {
       max-width: 900px;
       margin: 50px auto;
@@ -49,24 +76,56 @@
       margin: 0;
       white-space: pre-line;
     }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #00adb5;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #019ca1;
+    }
   </style>
 </head>
 <body>
+
+  <header>
+    <h2>Phuti Matooane</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <div class="container">
     <h1>My Education</h1>
 
     <div class="education-entry">
-      <h2>North West University</h2>
+      <h2>North-West University</h2>
       <h3>2022 – 2025</h3>
-      <p>BSc Information Technology majoring in Computer Science and Information Systems</p>
+      <p>BSc in Information Technology majoring in Computer Science and Information Systems</p>
     </div>
 
     <div class="education-entry">
       <h2>Kgokare Secondary School</h2>
       <h3>2015 – 2017</h3>
       <p>National Senior Certificate</p>
-      <a href="index.html" class="btn" style="margin-top:10px;">🏠 Back to Home</a>
     </div>
+
+    <a href="index.html" class="back-btn">🏠 Back to Home</a>
   </div>
+
 </body>
 </html>
