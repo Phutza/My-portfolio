@@ -8,7 +8,7 @@ This is the source code for my personal portfolio website built using HTML, CSS,
 
 ## 🧠 About Me
 
-I'm **Phuti Matooane**, an IT student at North-West University with a passion for **software development** and **data analytics**. I enjoy building user-friendly interfaces and working with both frontend and backend technologies. This portfolio reflects my growth, learning, and journey in tech.
+I'm **Phuti Matooane**, an IT student at North-West University with a passion for **software development** . I enjoy building user-friendly interfaces and working with both frontend and backend technologies. This portfolio reflects my growth, learning, and journey in tech.
 
 
 
