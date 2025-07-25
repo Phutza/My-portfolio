@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me - Phuti Danieljunior Matooane</title>
+  <title>About Me - Phuti Matooane</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -12,185 +13,96 @@
       color: #f1f1f1;
     }
 
-    header {
-      background-color: #1e1e1e;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    }
-
-    header h1 {
-      margin: 0;
-      color: #00adb5;
-      font-size: 1.8rem;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: #f1f1f1;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #00adb5;
-    }
-
     .container {
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 30px;
-      background-color: #1f1f1f;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 30px;
+      padding: 40px 20px;
     }
 
-    .profile-pic {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
+    .profile-image {
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      border: 4px solid #00adb5;
+      object-fit: cover;
+      border: 3px solid #00adb5;
+      margin-bottom: 20px;
     }
 
-    .about-text {
-      max-width: 600px;
-    }
-
-    .about-text h1 {
-      margin: 0;
-      font-size: 2.2rem;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
       color: #00adb5;
     }
 
-    .about-text h2 {
-      margin-top: 5px;
-      font-weight: 400;
-      color: #aaaaaa;
-      font-size: 1.2rem;
+    p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      text-align: center;
+      line-height: 1.6;
     }
 
-    .about-text p {
-      margin-top: 20px;
-      line-height: 1.7;
-      font-size: 1rem;
-    }
-
-    .btn {
+    a.button {
       display: inline-block;
-      margin-top: 20px;
       padding: 12px 25px;
       background-color: #00adb5;
-      color: #121212;
-      font-weight: bold;
+      color: #fff;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: #009a9a;
-    }
-
-    .card {
-      background-color: #1c1c1c;
-      padding: 20px;
-      margin-top: 30px;
-      border-left: 5px solid #00adb5;
       border-radius: 8px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
     }
 
-    .card h3 {
-      margin: 0;
+    a.button:hover {
+      background-color: #007a83;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      color: #f1f1f1;
+      margin: 0 15px;
+      font-size: 1.8rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
       color: #00adb5;
-      font-size: 1.2rem;
-    }
-
-    .card p {
-      margin: 5px 0 0;
-      font-size: 0.95rem;
-      color: #ddd;
     }
 
     footer {
-      text-align: center;
       margin-top: 50px;
-      padding: 20px;
       font-size: 0.9rem;
-      color: #aaa;
-      background-color: #1e1e1e;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .about-text {
-        max-width: 100%;
-      }
+      color: #aaaaaa;
     }
   </style>
 </head>
 <body>
 
-
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="education.html">Education</a>
-      <a href="projects.html">Projects</a>
-     
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Main Section -->
   <div class="container">
-    <img src="yourphoto.jpg" alt="Phuti Matooane" class="profile-pic" />
+    <img src="profile.jpg" alt="Phuti Matooane" class="profile-image" />
 
-    <div class="about-text">
-      <h1>Phuti DanielJunior Matooane</h1>
-      <h2>Final-Year BSc in IT(Computer science and Information Systems) Student | Software Developer</h2>
-      <p>
-        I am a final-year BSc in Information Technology student at North-West University, majoring in Computer Science and Information Systems.
-        I have a solid foundation in software development with experience in Java, Python, C++, C# (ASP.NET) and JavaScript.
-        I’m skilled in web technologies (HTML, CSS), databases (SQL), and have an interest in Artificial Intelligence and  Machine Learning basics and Data Analytics.
-        I’ve also worked with Oracle, GitHub, Linux, Visual Studio and have practical networking experience using Cisco routing and switching.
-      </p>
+    <h1>Phuti Matooane</h1>
+    <p>
+      I'm a passionate and detail-oriented aspiring software developer with a strong foundation in Java, web development, data analytics, and systems design. I enjoy building real-world solutions using C#, SQL, HTML, and CSS. 
+      I’m currently studying at NWU and constantly improving my skills through hands-on projects like this portfolio.
+    </p>
 
-      <a href="Phuti_Matooane_CV.pdf" download class="btn">📄 Download CV</a>
+    <a href="Phuti_Matooane_CV.pdf" download class="button">Download CV</a>
 
-      <div class="card">
-        <h3>Passion</h3>
-        <p>I am passionate about building smart, efficient and impactful software solutions that solve real-world problems.</p>
-      </div>
-
-      <div class="card">
-        <h3>Goal</h3>
-        <p>To become a full-stack developer and contribute to innovative technology in Africa and beyond.</p>
-      </div>
+   
+    <div class="social-icons">
+      <a href="https://github.com/Phutza" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/phuti-matooane-2102b2321/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/phuti.manaka" target="_blank"><i class="fab fa-facebook"></i></a>
     </div>
-  </div>
 
-  
-  <footer>
-    © 2025 Phuti Matooane. All rights reserved.
-  </footer>
+    <footer>
+      &copy; 2025 Phuti Matooane | Built with HTML, CSS & 💙
+    </footer>
+  </div>
 
 </body>
 </html>
