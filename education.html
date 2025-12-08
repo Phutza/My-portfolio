@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Education - Phuti Danieljunior Matooane</title>
+  <title>Education - Phuti DanielJunior Matooane</title>
   <style>
     body {
       margin: 0;
@@ -11,91 +11,77 @@
       background-color: #121212;
       color: #f1f1f1;
     }
-
     header {
-      background-color: #1a1a1a;
-      padding: 15px 30px;
+      background-color: #1e1e1e;
+      padding: 20px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
     }
-
-    header h2 {
-      color: #00adb5;
-      margin: 0;
-      font-size: 1.5rem;
     }
-
+    header h2 { color: #00adb5; margin: 0; font-size: 1.6rem; }
     nav a {
       color: #f1f1f1;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 22px;
       font-weight: bold;
-      transition: color 0.3s;
     }
-
-    nav a:hover {
-      color: #00adb5;
-    }
-
+    nav a:hover { color: #00adb5; }
     .container {
       max-width: 900px;
-      margin: 50px auto;
-      padding: 30px;
+      margin: 60px auto;
+      padding: 20px;
     }
-
     h1 {
       text-align: center;
       color: #00adb5;
-      margin-bottom: 40px;
+      font-size: 2.2rem;
+      margin-bottom: 50px;
     }
-
     .education-entry {
       background-color: #1f1f1f;
-      padding: 20px;
-      margin-bottom: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      border-left: 5px solid #00adb5;
     }
-
     .education-entry h2 {
       color: #00adb5;
-      margin: 0;
+      margin: 0 0 8px 0;
+      font-size: 1.5rem;
     }
-
     .education-entry h3 {
-      margin: 5px 0;
-      font-weight: normal;
-      color: #ccc;
+      margin: 0 0 12px 0;
+      color: #00e0e0;
+      font-weight: 600;
     }
-
     .education-entry p {
-      font-size: 1rem;
-      color: #ccc;
-      margin: 0;
-      white-space: pre-line;
+      margin: 8px 0;
+      line-height: 1.6;
+      color: #ddd;
     }
-
+    .highlight {
+      color: #00adb5;
+      font-weight: bold;
+    }
     .back-btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      padding: 12px 30px;
       background-color: #00adb5;
       color: #121212;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-weight: bold;
-      transition: background-color 0.3s;
+      transition: 0.3s;
     }
-
-    .back-btn:hover {
-      background-color: #019ca1;
-    }
+    .back-btn:hover { background-color: #00d9e1; }
   </style>
 </head>
 <body>
-
   <header>
     <h2>Phuti Matooane</h2>
     <nav>
@@ -103,30 +89,34 @@
       <a href="about.html">About</a>
       <a href="skills.html">Skills</a>
       <a href="education.html">Education</a>
-     
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <div class="container">
-    <h1>My Education</h1>
+    <h1>Education</h1>
 
     <div class="education-entry">
-      <h2>North-West University</h2>
-      <h3>2022 – 2025(Expected completion year)</h3>
-
-      <p>BSc in Information Technology majoring in Computer Science and Information Systems</p>
+      <h2>North-West University (NWU)</h2>
+      <h3> <span class="highlight">→ Graduated</span></h3>
+      <p>
+        Bachelor of Science in Information Technology<br>
+        <strong>Majors:</strong> Computer Science and Information Systems<br>
+        <strong>Key modules:</strong> Software Engineering • Data Warehousing & Business Intelligence • Database Systems • Artificial Intelligence • Cybersecurity • Advanced Programming • Networks
+      </p>
     </div>
 
     <div class="education-entry">
       <h2>Kgokare Secondary School</h2>
       <h3>2015 – 2017</h3>
-      <p>National Senior Certificate</p>
+      <p>
+        National Senior Certificate (Matric)<br>
+        Subjects: Mathematics, Physical Sciences, English, Life Orientation, Accounting, Computer Applications Technology
+      </p>
     </div>
 
-    <a href="index.html" class="back-btn">🏠 Back to Home</a>
+    <a href="index.html" class="back-btn">Back to Home</a>
   </div>
-
 </body>
 </html>
